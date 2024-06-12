@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import photoSecond from "../../image/2_photo.png";
 import photoFirst from "../../image/5photo.png";
 import '../Projects/Projects.css'
+import ecommerce from '../../image/01.png'
 
 const Projects = () => {
   return (
@@ -18,7 +19,39 @@ const Projects = () => {
           cursor: "pointer",
         }}
       >
-        <Card
+
+
+<Card className="card"
+          style={{
+            width: "18rem",
+            background: "rgb(50, 50, 50)",
+            color: "white",
+            marginRight: "1.5rem",
+            height:"100%"
+          }}
+        >
+          <Card.Img variant="top" src={ecommerce} />
+          <Card.Body>
+            <Card.Title>CLOTHIFY | online shopping</Card.Title>
+            <Card.Text style={{fontSize:"0.8rem",textOverflow: "ellipsis"}}>
+            I'm thrilled to introduce Clothify, a new e-commerce platform that offers a wide range of fashion clothing for men, women, and kids. Built using the MERN stack (MongoDB, Express.js, React, and Node.js), Clothify aims to provide a seamless and enjoyable shopping experience for fashion enthusiasts.This website will be fully responsive and functional
+            </Card.Text>
+            <div
+              className="btn-flex"
+              style={{ display: "flex", justifyContent: "space-between" }}
+            >
+              <a href="https://clothify-commerce.netlify.app/" target="_blank" rel="noreferrer">
+                <Button style={{ color: "black", width: "7rem" }}>Demo</Button>
+              </a>
+              <a href="https://github.com/Dhairya061202/MERN_Ecommerce" target="_blank" rel="noreferrer">
+                <Button style={{ color: "black", width: "7rem" }}>Code</Button>
+              </a>
+            </div>
+          </Card.Body>
+        </Card>
+
+
+        <Card className="card"
           style={{
             width: "18rem",
             background: "rgb(50, 50, 50)",
@@ -36,7 +69,7 @@ const Projects = () => {
               className="btn-flex"
               style={{ display: "flex", justifyContent: "space-between" }}
             >
-              <a href="https://cinemomovies.netlify.app/" target="_blank" rel="noreferrer">
+              <a href="https://mobile-dekho.netlify.app/" target="_blank" rel="noreferrer">
                 <Button style={{ color: "black", width: "7rem" }}>Demo</Button>
               </a>
               <a href="https://github.com/Dhairya061202/MObile-Dekho" target="_blank" rel="noreferrer">
@@ -46,7 +79,7 @@ const Projects = () => {
           </Card.Body>
         </Card>
 
-        <Card
+        <Card className="card3"
           style={{
             width: "18rem",
             background: "rgb(50, 50, 50)",
